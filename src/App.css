@@ -1,0 +1,156 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px;
+  padding: 20px;
+  background-color: #121212;
+  margin-top: -20px;
+}
+
+.Movie-wrapper {
+  font-weight: bold;
+  width: 200.5px;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Movie-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 6px;
+  text-align: center;
+}
+a {
+  color: #ffffff; /* Warna tautan saat normal */
+  text-decoration: none; /* Hilangkan garis bawah pada tautan */
+}
+
+a:hover {
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; /* Efek bayangan saat dihover */
+}
+
+.Movie-date {
+  color: grey;
+  font-weight: normal;
+  margin-bottom: 6px;
+}
+
+.Movie-rate {
+  font-weight: lighter;
+  margin-top: auto;
+  align-self: center;
+}
+
+.Movie-image {
+  width: 100%;
+  height: 337.5px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.Movie-wrapper:hover .Movie-image {
+  transform: scale(1.05);
+}
+
+.Movie-search {
+  height: 56px;
+  width: 100%;
+  font-size: 24px;
+  margin-bottom: 0px;
+  padding: 16px;
+  color: #ffffff;
+  background-color: #282c34;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.Movie-search:hover {
+  background-color: #444c57;
+}
+
+.App-content {
+  flex: 1;
+}
+
+.Logo-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.App-logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.Logo-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.Movie-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Movie-wrapper {
+    width: 100%;
+  }
+  
+  .Movie-image {
+    height: 225px; /* Mengurangi tinggi .Movie-image pada layar kecil */
+  }
+  
+  .Movie-title {
+    font-size: 18px; /* Mengurangi ukuran font pada judul film pada layar kecil */
+  }
+  
+  .Movie-date {
+    font-size: 14px; /* Mengurangi ukuran font pada tanggal film pada layar kecil */
+  }
+  
+  .Movie-rate {
+    font-size: 14px; /* Mengurangi ukuran font pada rating film pada layar kecil */
+  }
+}
+
+.Movie-wrapper:hover .Movie-image {
+  transform: scale(1.05) rotateY(10deg) rotateX(10deg);
+  filter: brightness(120%);
+}
