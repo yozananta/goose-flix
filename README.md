@@ -5,8 +5,6 @@ GooseFlix is a movie search website that provides users with a comprehensive dat
 ## Table of Contents
 
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -18,38 +16,6 @@ GooseFlix is a movie search website that provides users with a comprehensive dat
 - Discover new movie releases
 - User-friendly interface for easy navigation
 - Responsive design for different screen sizes
-
-## Installation
-
-To set up GooseFlix on your local machine, follow these steps:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/GooseFlix.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd GooseFlix
-   ```
-
-3. Install the required dependencies:
-
-   ```bash
-   npm install
-   ```
-
-## Usage
-
-1. Start the development server:
-
-   ```bash
-   npm start
-   ```
-
-2. Open your web browser and visit `http://localhost:3000` to access GooseFlix.
 
 ## Contributing
 
